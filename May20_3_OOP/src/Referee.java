@@ -6,13 +6,12 @@ public class Referee {
 	public void read_rule_book() {
 		System.out.println("================");
 		for (int i = 1; i < rulebook.length; i++) {
-			System.out.printf("%d/ %s\n", i, rulebook[i]);
+			System.out.printf("%d: %s\n", i, rulebook[i]);
 		}
 		System.out.println("================");
 	}
 
 	// 뭐 낼지 물어보기
-
 	public int ask_ans(Friend_A a) {
 		System.out.print("뭐 낼래? :");
 		int a_ans = a.fire();
